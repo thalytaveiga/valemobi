@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- Este código tem como finalidade mostrar as habilidades 
+	da estudante em JavaScript e HTML -->
+	
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>Valemobi - Negociação de mercadorias</title>
+        
+        
+        <script type="text/javascript">
+//         	Alerta simulação de cadastro no banco de dados
+        	function salvar(){
+        		alert('Cadastro efetuado com sucesso!');
+        	}
+        </script>
+        
+    </head>
+    <body>
+  		<img src="imagens/valemobi.png" alt="Logo Valemobi">
+		<form action="#" method="post">
+    		<fieldset>
+    		<div>
+	        	<label for="codMerc">Código da mercadoria:</label>
+	        	<input type="text" id="codMerc"/>
+	    	</div>
+	    	
+<!-- 	    	Lista fictícia de tipos de mercadoria que serão negociadas -->
+	    	<div>
+	        	<label for="tipoMerc">Tipo de mercadoria:</label>
+	        	<select>
+	        		<option value="" label="Selecione">
+	        		<option value="1" label="Eletrônicos">
+	        		<option value="2" label="Automóveis">
+	        		<option value="3" label="Brinquedos">
+	        		<option value="4" label="Roupas">
+	        		<option value="5" label="Calçados">
+	        	</select>
+	    	</div>
+	    	<div>
+	        	<label for="nome">Nome da mercadoria:</label>
+	        	<input type="text" id="nome" />
+    		</div>
+    		<div>
+	        	<label for="qtd">Quantidade de mercadoria:</label>
+	        	<input type="number" id="qtd" />
+	    	</div>
+	    	<div>
+	        	<label for="valorUnitario">Valor unitário:</label>
+	        	<input type="number" id="valorUnitario" />
+	    	</div>
+	    	<div>
+	        	<label for="tipoNegocio">Tipo de negociação:</label>
+	        	<input type="radio" id="tipoNegocio" value="C" name="tipoNegocio" checked/>Compra
+	        	<input type="radio" id="tipoNegocio" value="V" name="tipoNegocio" />Venda
+	    	</div>
+	    	<br/>
+	    	<button onclick="salvar();">Cadastrar</button>
+    		</fieldset>
+		</form>
+    </body>
+</html>
